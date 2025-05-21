@@ -24,10 +24,11 @@
                 <!-- Email Address -->
                 <div class="">
                     <x-input-label for="login" :value="__('Email')" />
-                    <x-text-input id="login"
-                        class="block lg:mt-[1vh] md:mt-[1vh] sm:mt-[1vh]  w-[240px] md:min-w-[280px] md:w-[30vw] lg:w-[15vw] lg-min-w[220px]  lg-max-w[304px] placeholder:opacity-100 sm:placeholder:opacity-100 placeholder:text-transparent sm:placeholder:text-white-400 "
+                    <x-text-input
+                        class="block lg:mt-[1vh] md:mt-[1vh] sm:mt-[1vh] w-[240px] md:min-w-[280px] md:w-[30vw] lg:w-[15vw] lg-min-w[220px] lg-max-w[304px] placeholder:opacity-100 xl:placeholder:opacity-100 placeholder:text-white focus:placeholder:text-[#33694F]" id="input"
                         type="text" name="login" :value="old('login')" required autofocus autocomplete="username"
-                        placeholder="Enter your email" />
+                        placeholder="Enter your email" id="inputBox"/>
+                        
                     <x-input-error :messages="$errors->get('login')" class="mt-2" />
                 </div>
 
@@ -36,7 +37,7 @@
                     <x-input-label for="password" :value="__('Password')" />
 
                     <x-text-input id="password"
-                        class="block lg:mt-[1vh] md:mt-[1vh] sm:mt-[1vh] w-[240px] md:min-w-[280px] md:w-[30vw] lg:w-[15vw] lg-min-w[220px] lg-max-w[304px]placeholder:opacity-100 sm:placeholder:opacity-100 placeholder:text-transparent sm:placeholder:text-white-400"
+                        class="block lg:mt-[1vh] md:mt-[1vh] sm:mt-[1vh] w-[240px] md:min-w-[280px] md:w-[30vw] lg:w-[15vw] lg-min-w[220px] lg-max-w[304px] placeholder:opacity-100 xl:placeholder:opacity-100 placeholder:text-white focus:placeholder:text-[#33694F]"
                         type="password" name="password" required autocomplete="current-password"
                         placeholder="Enter your password" />
 
@@ -45,17 +46,17 @@
 
                 <!-- Remember Me -->
                 <div
-                    class="sm:flex sm:items-center sm:justify-between md:items-center md:justify-between lg:mb-[3vh] md:mb-[1vh] text-sm mt-[3vh] block">
-                    <label for="remember_me" class="inline-flex items-center">
+                    class="sm:flex sm:items-center sm:justify-between md:items-center md:justify-between lg:mb-[3vh] md:mb-[1vh] text-sm mt-[3vh] block ">
+                    <label for="remember_me" class="inline-flex items-center cursor-pointer">
                         <input id="remember_me" type="checkbox"
                             class="rounded border-gray-300 dark:border-gray-700  shadow-sm hidden sm:block "
                             name="remember">
                         <span
-                            class="ms-2 text-xs text-[#1E352A] font-semibold hidden sm:block">{{ __('Remember me') }}</span>
+                            class="ms-2 text-xs text-[#1E352A] font-semibold hidden sm:block cursor-pointer">{{ __('Remember me') }}</span>
                     </label>
 
                     @if (Route::has('password.request'))
-                        <a class="text-xs text-[#1E352A] text-[#1E352A] font-semibold hover:text-gray-900 dark:hover:text-gray-100 rounded-md dark:focus:ring-offset-gray-800 pr-1 items-center justify-center"
+                        <a class="text-xs text-[#1E352A] text-[#1E352A] font-semibold hover:text-gray-900 dark:hover:text-gray-100 rounded-md dark:focus:ring-offset-gray-800 pr-1 items-center justify-center cursor-pointer"
                             href="{{ route('password.request') }}">
                             {{ __('Forgot password?') }}
                         </a>
