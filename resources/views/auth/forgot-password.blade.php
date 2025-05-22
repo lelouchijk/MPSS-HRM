@@ -80,8 +80,8 @@
                         <x-input-label class="text-start mx-2 py-1" :value="__('Email')"/>
                         <x-text-input
                             class="block w-[50vh] placeholder:opacity-100 placeholder:text-white focus:placeholder:text-[#33694F] "
-                            id="input" type="text" name="login" :value="old('login')" required autofocus
-                            autocomplete="username" placeholder="Enter your email" id="inputBox" />
+                            id="input" type="text" name="email" :value="old('email')" required autofocus
+                            autocomplete="email" placeholder="Enter your email" id="inputBox" />
                     </div>
                 </div>
 
