@@ -82,6 +82,7 @@
                             class="block w-[50vh] placeholder:opacity-100 placeholder:text-white focus:placeholder:text-[#33694F] "
                             id="input" type="text" name="email" :value="old('email')" required autofocus
                             autocomplete="email" placeholder="Enter your email" id="inputBox" />
+                            <x-input-error :messages="$errors->get('email')" class="mt-2" />
                     </div>
                 </div>
 
