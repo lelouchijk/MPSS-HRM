@@ -49,7 +49,7 @@
 
 
         <div
-            class="absolute w-[81px] h-[81px] left-[-2%] top-[-3%] rounded-full [background:linear-gradient(182deg,rgba(169,232,188,0.5)_0%,rgba(68,147,91,0.5)_100%)] hidden xl:block">
+            class="absolute w-[81px] h-[81px] left-[-2%] top-[-3%] rounded-full [background:linear-gradient(182deg,rgba(169,232,188,0.5)_0%,rgba(68,147,91,0.5)_100%)] xl:block">
         </div>
 
 
@@ -63,7 +63,7 @@
 
 
         <div
-            class="absolute w-[141px] h-[134px] left-[0%] top-[18%] [border-radius:70.5px/67px] [backdrop-filter:blur(15px)_brightness(100%)] [background:linear-gradient(207deg,rgba(169,232,188,0.8)_0%,rgba(47,149,78,0.8)_100%)] hidden xl:block">
+            class="absolute w-[141px] h-[134px] left-[0%] top-[18%] [border-radius:70.5px/67px] [backdrop-filter:blur(15px)_brightness(100%)] [background:linear-gradient(207deg,rgba(169,232,188,0.8)_0%,rgba(47,149,78,0.8)_100%)]">
         </div>
 
 
@@ -73,18 +73,14 @@
 
 
         <div
-            class="absolute w-[79px] h-[72px] left-[30%] top-[-5%] [border-radius:39.5px/36px] [background:linear-gradient(215deg,rgba(51,105,79,0.39)_0%,rgba(192,237,206,0.39)_100%)] hidden xl:block">
+            class="absolute w-[79px] h-[72px] left-[30%] top-[-5%] [border-radius:39.5px/36px] [background:linear-gradient(215deg,rgba(51,105,79,0.39)_0%,rgba(192,237,206,0.39)_100%)] xl:block">
         </div>
 
         <div class = "flex sm:w-[62vw] lg:h-[75.14vh] max-h-[75.14vh] z-10 "> <!-- 65vw -->
             <div
                 class="relative hidden xl:block xl:basis-[45%] bg-[#FFFFFF] p-4 min-h-[200px] rounded-l-2xl
                  ">
-                <!-- Tailwind version with responsive positioning (using percentages) -->
-
-
-
-
+            
                 <div class="w-20 h-20 origin-top-left scale-75">
                     <x-application-logo class="w-full h-full fill-current" />
                 </div>
